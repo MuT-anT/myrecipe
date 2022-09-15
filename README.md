@@ -1,24 +1,19 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+create a myrecipes app
 
-Things you may want to cover:
+Minitest
 
-* Ruby version
+-Integration testing
+-Model Testing-unit testing
 
-* System dependencies
+rails generate intergration_test pages(command to generate test)
 
-* Configuration
+we would write up testcases in the test/pages 
+such as :
+ test "Should get home" do
+    get pages_home_url
+    assert_response :success
+end
 
-* Database creation
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
